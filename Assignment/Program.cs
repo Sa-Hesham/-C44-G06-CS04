@@ -243,11 +243,36 @@ namespace Assignment
 
             //    if (i % 2 == 0)
             //        Console.WriteLine($"{i},");
-                
+
 
 
             //}
 
+
+            #endregion
+
+
+            #region Q9
+            //Write a program that takes two integers then prints the power.
+
+            //Console.WriteLine("enter the based number ");
+            //  int.TryParse(Console.ReadLine(), out int based);
+
+            //Console.WriteLine("enter the exponent number ");
+            //int.TryParse(Console.ReadLine(), out int exponent);
+
+            //int Multiply = 1;
+
+
+            //for (int i = 1; i <= exponent; i++)
+            //{
+            //    Multiply *= based;
+
+            //}  
+
+            
+
+            //Console.WriteLine($"{based} ^ {exponent} = {Multiply}");
 
             #endregion
 
