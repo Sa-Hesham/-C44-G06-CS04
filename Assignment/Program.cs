@@ -1,13 +1,7 @@
-﻿using System.Collections.Generic;
+﻿
+
+using System;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Reflection.Metadata;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-using System.Threading.Channels;
-using System.Transactions;
-using System.Xml.Linq;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment
 {
@@ -228,6 +222,29 @@ namespace Assignment
             //{
 
             //    Console.WriteLine($"{x} * {i} = {5*i}");
+
+            //}
+
+
+            #endregion
+
+
+            #region Q8
+
+            //8 - Write a program that allows to user to insert number then print all even
+            //    numbers between 1 to this number
+
+            //Console.WriteLine("please enter number ");
+            //int.TryParse(Console.ReadLine(), out int number);
+            //Console.WriteLine($"Even number  are :: ");
+            //for (int i=1; i<=number;i++)
+            //{
+
+
+            //    if (i % 2 == 0)
+            //        Console.WriteLine($"{i},");
+                
+
 
             //}
 
