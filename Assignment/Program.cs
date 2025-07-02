@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 using System.Threading.Channels;
 using System.Transactions;
 using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment
 {
@@ -166,9 +167,9 @@ namespace Assignment
             //5 - Write a program that takes character from the user then if it is a vowel
             //chars(a, e, I, o, u) then print(vowel) otherwise print(consonant).
 
-            Console.WriteLine("enter character ");
-             char.TryParse(Console.ReadLine(),out char a);
-            
+            //Console.WriteLine("enter character ");
+            // char.TryParse(Console.ReadLine(),out char a);
+
             //switch (a)
             //{
             //    case 'a':
@@ -193,6 +194,25 @@ namespace Assignment
 
             //};
 
+
+            #endregion
+
+
+
+            #region Q6
+
+            //6 - Write a program that allows the user to insert an integer then print all
+            //numbers between 1 to that number.
+
+            //Console.WriteLine("enter number ");
+            //int.TryParse(Console.ReadLine(), out int num);
+
+            //Console.WriteLine($"the number between 1 to {num} is ::");
+
+            //for (int i = 1; i <= num; i++)
+            //{
+            //    Console.Write($" {i}, ");
+            //}
 
             #endregion
 
