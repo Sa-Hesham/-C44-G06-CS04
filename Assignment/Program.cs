@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading.Channels;
@@ -154,6 +155,43 @@ namespace Assignment
             //{
             //    Console.WriteLine("ODD");
             //}
+
+
+            #endregion
+
+
+
+            #region Q5
+
+            //5 - Write a program that takes character from the user then if it is a vowel
+            //chars(a, e, I, o, u) then print(vowel) otherwise print(consonant).
+
+            Console.WriteLine("enter character ");
+             char.TryParse(Console.ReadLine(),out char a);
+            
+            //switch (a)
+            //{
+            //    case 'a':
+            //    case 'i':
+            //    case 'o':
+            //    case 'u':
+            //    case 'e':
+            //    case 'A':
+            //    case 'I':
+            //    case 'O':
+            //    case 'U':
+            //    case 'E':
+            //        Console.WriteLine("Vowel");
+            //        break;
+            //    default:
+            //        Console.WriteLine("constant");
+            //        break;
+
+
+
+
+
+            //};
 
 
             #endregion
