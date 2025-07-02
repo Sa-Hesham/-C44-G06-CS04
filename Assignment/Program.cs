@@ -270,12 +270,44 @@ namespace Assignment
 
             //}  
 
-            
+
 
             //Console.WriteLine($"{based} ^ {exponent} = {Multiply}");
 
             #endregion
 
+
+
+            #region Q10
+
+            //  int total = 0;
+            //int  average = default;
+            //int percent = default;
+
+            //for (int i = 1; i <= 5; i++)
+            //{
+            //    Console.WriteLine($"inter dgree subj {i}");
+            //    int dgree;
+            //    int.TryParse (Console.ReadLine(),out dgree);
+            //    total += dgree;
+
+
+            //}
+
+
+            //average = total / 5;
+            //percent = (408 * 100) / 500;
+
+            //Console.WriteLine($" Total marks = {total}");
+            //Console.WriteLine($" Average marks  = {average}");
+            //Console.WriteLine($" Percentage = {percent}");
+
+
+
+
+
+
+            #endregion
 
 
 
