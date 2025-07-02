@@ -195,11 +195,26 @@ internal class Program
             #endregion
 
 
+            #region switch C# 9.0
+
+
+            //int? number = null;
+            int? number = null;
+            string result = number switch
+            {
+
+                null => "null",
+                > 0 => "positive", // must use alias Name to make comaprison 
+                 < 0 => "negative ",
+                _ => "it is zero "
+
+            };
+            Console.WriteLine(result);
+            #endregion
 
 
 
 
-                    
             #endregion
 
 
