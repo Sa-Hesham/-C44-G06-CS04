@@ -341,7 +341,37 @@ namespace Assignment
             //{
             //    Console.WriteLine("Invalid month number!");
             //}
-                #endregion
+            #endregion
+
+
+
+            #region Q12
+
+            ////12- Write a program to create a Simple Calculator.
+            //Console.Write(" the opration  (+, - ,* ,/) :: ");
+            //char.TryParse(Console.ReadLine(), out char oper );
+
+            //Console.Write("enter the first number : ");
+            //float.TryParse(Console.ReadLine(), out float num1);
+
+            //Console.Write("enter the second number : ");
+            //float.TryParse(Console.ReadLine(), out float num2);
+
+
+            //string message = oper switch
+            //{
+
+            //    '+' => $"{num1} + {num2} ={num1 + num2} ",
+            //    '-' => $"{num1} - {num2} = {num1 - num2}",
+            //    '*' => $"{num1} * {num2} = {num1 * num2}",
+            //    '/'=> num2!=0 ? $"{num1} / {num2} = {num1/num2}" : $" you can not devide by zero ",
+
+            //};
+
+            //Console.WriteLine(message);
+
+
+            #endregion
 
 
 
@@ -360,9 +390,8 @@ namespace Assignment
 
 
 
-
-
-            }
 
         }
+
+    }
 }
