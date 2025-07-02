@@ -66,12 +66,12 @@ namespace Assignment
             //3 - Write a program that takes 3 integers from the user then prints the max
             //element and the min element.
 
-            Console.WriteLine("enter number 1 ");
-            int.TryParse(Console.ReadLine(), out int num1);
-            Console.WriteLine("enter number 2 ");
-            int.TryParse(Console.ReadLine(), out int num2);
-            Console.WriteLine("enter number 3 ");
-            int.TryParse(Console.ReadLine(), out int num3);
+            //Console.WriteLine("enter number 1 ");
+            //int.TryParse(Console.ReadLine(), out int num1);
+            //Console.WriteLine("enter number 2 ");
+            //int.TryParse(Console.ReadLine(), out int num2);
+            //Console.WriteLine("enter number 3 ");
+            //int.TryParse(Console.ReadLine(), out int num3);
 
             //// ======== first way ===========
             //int max = 0;
@@ -114,22 +114,22 @@ namespace Assignment
 
 
             //=============Another Way===================== 
-           int Maxnum = num1;
-            int Minnum = num1;
+           //int Maxnum = num1;
+           // int Minnum = num1;
 
-            if (num2 > Maxnum)
-                Maxnum = num2;
-            if (num3 > Maxnum)
-                Maxnum = num3;
+           // if (num2 > Maxnum)
+           //     Maxnum = num2;
+           // if (num3 > Maxnum)
+           //     Maxnum = num3;
 
 
 
-            if (num2 < Maxnum)
-                Minnum = num2;
-            if (num3 < Maxnum)
-                Minnum = num3;
+           // if (num2 < Minnum)
+           //     Minnum = num2;
+           // if (num3 < Minnum)
+           //     Minnum = num3;
 
-            Console.WriteLine($"max number is {Maxnum} ,,  min number is :: {Minnum}");
+           // Console.WriteLine($"max number is {Maxnum} ,,  min number is :: {Minnum}");
 
 
 
