@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Threading.Channels;
+
+namespace Demo
 {
     class Person
     {
@@ -107,6 +109,97 @@ internal class Program
 
             #endregion
 
+            #endregion
+
+
+
+            #region switch C# 8.0
+
+            #region pattern matching with out alias 
+
+            //object obj = 10;
+
+            //switch (obj)
+            //{
+
+            //    case int when (int)obj <10 : 
+            //        Console.WriteLine($" value is int");
+            //        break;
+            //    case double :
+            //        Console.WriteLine($" value is double");
+            //        break;
+            //    case float :
+            //        Console.WriteLine($" value is float");
+            //        break;
+            //    case Person :
+            //        Console.WriteLine($" value is person ");
+            //        break;
+            //    default:
+            //        Console.WriteLine($" value is not int or double or float or person );
+            //        break;
+            //}
+
+            #endregion
+            #region switch experssion [constant pattern - discard pattern]
+            //int number;
+
+            //int.TryParse(Console.ReadLine(), out  number);
+
+            //string result = number switch
+            //{
+
+            //    1 => "one", // constant pattern
+            //    2 => "two",
+            //    3 => "three",
+            //    _=> "other" //discard pattern
+
+            //};
+
+            //Console.WriteLine(result);
+
+
+
+
+            #endregion
+
+
+            #region property pattern
+            //Person person = new Person() { id = 2, name = "ahmed", age = 20 };
+            //string result = person switch
+            //{
+            //    { age: < 18 } => "under age",  // property pattern 
+            //    { age: >= 18, name: "ahmed" } => "adult ahmed",
+            //    { age: >= 18, name: "mohamed" } => "adult mohamed",
+            //    _ =>" hello world"
+            //};
+
+            //Console.WriteLine(result);
+            #endregion
+
+
+            #region nullable type 
+
+            ////int? number = null;
+            //int? number = null;
+            //string result = number switch
+            //{
+
+            //    null => "null",
+            //    int x when x> 0 => "positive", // must use alias Name to make comaprison 
+            //    int y when y< 0 =>"negative ",
+            //    _=>"it is zero "
+
+
+
+            //};
+            #endregion
+
+
+
+
+
+
+                    
             #endregion
 
 
