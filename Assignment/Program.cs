@@ -218,6 +218,26 @@ namespace Assignment
 
 
 
+            #region Q7
+
+            //Console.WriteLine("enter number ");
+            //int.TryParse(Console.ReadLine(), out int x);
+
+            //Console.Clear();
+            //for (int i = 1; i <= 12; i++)
+            //{
+
+            //    Console.WriteLine($"{x} * {i} = {5*i}");
+
+            //}
+
+
+            #endregion
+
+
+
+
+
 
 
 
