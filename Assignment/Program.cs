@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Threading.Channels;
 using System.Transactions;
 using System.Xml.Linq;
@@ -114,25 +115,45 @@ namespace Assignment
 
 
             //=============Another Way===================== 
-           //int Maxnum = num1;
-           // int Minnum = num1;
+            //int Maxnum = num1;
+            // int Minnum = num1;
 
-           // if (num2 > Maxnum)
-           //     Maxnum = num2;
-           // if (num3 > Maxnum)
-           //     Maxnum = num3;
-
-
-
-           // if (num2 < Minnum)
-           //     Minnum = num2;
-           // if (num3 < Minnum)
-           //     Minnum = num3;
-
-           // Console.WriteLine($"max number is {Maxnum} ,,  min number is :: {Minnum}");
+            // if (num2 > Maxnum)
+            //     Maxnum = num2;
+            // if (num3 > Maxnum)
+            //     Maxnum = num3;
 
 
 
+            // if (num2 < Minnum)
+            //     Minnum = num2;
+            // if (num3 < Minnum)
+            //     Minnum = num3;
+
+            // Console.WriteLine($"max number is {Maxnum} ,,  min number is :: {Minnum}");
+
+
+
+
+
+            #endregion
+
+
+            #region Q4
+
+            //4 - Write a program that allows the user to insert an integer number then
+            //check If a number is even or odd.
+
+            //Console.WriteLine("enter number 1 ");
+            //int.TryParse(Console.ReadLine(), out int num1);
+
+            //if (num1 % 2 == 0)
+            //{
+            //    Console.WriteLine("Even");
+            //}else
+            //{
+            //    Console.WriteLine("ODD");
+            //}
 
 
             #endregion
