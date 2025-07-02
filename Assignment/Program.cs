@@ -314,6 +314,34 @@ namespace Assignment
 
 
 
+            #region Q11
+
+            //11 - Write a program to input the month number and print the number of days in
+            //that month.
+
+
+            //Console.Write("Enter Month Number : ");
+            //int.TryParse(Console.ReadLine(), out int month);
+
+
+            //if (month == 1 || month == 3 || month == 5 || month == 7 ||
+            //    month == 8 || month == 10 || month == 12)
+            //{
+            //    Console.WriteLine("Days in Month: 31");
+            //}
+            //else if (month == 4 || month == 6 || month == 9 || month == 11)
+            //{
+            //    Console.WriteLine(" Days in Month: 30");
+            //}
+            //else if (month == 2)
+            //{
+            //    Console.WriteLine("Days in Month: 28");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid month number!");
+            //}
+                #endregion
 
 
 
@@ -325,8 +353,16 @@ namespace Assignment
 
 
 
+
+
+
+
+
+
+
+
+
+            }
 
         }
-
-    }
 }
