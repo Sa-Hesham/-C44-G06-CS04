@@ -501,7 +501,7 @@ namespace Assignment
             //    double slope1 = (y2 - y1) / (x2 - x1);
             //    double slope2 = (y3 - y2) / (x3 - x2);
 
-             
+
             //    if (slope1 == slope2)
             //    {
             //        Console.WriteLine("The points are on the same straight line.");
@@ -513,6 +513,54 @@ namespace Assignment
 
             //}
 
+
+            #endregion
+
+
+
+
+            #region Q17
+            /*17- Within a company, the efficiency of workers is evaluated based on the
+            duration required to complete a specific task. A worker's efficiency level is
+            determined as follows:
+            - If the worker completes the job within 2 to 3 hours, they are considered
+            highly efficient.
+            - If the worker takes 3 to 4 hours, they are instructed to increase their
+            speed.
+            - If the worker takes 4 to 5 hours, they are provided with training to
+            enhance their speed.
+            - If the worker takes more than 5 hours, they are required to leave the
+            company.
+            To calculate the efficiency of a worker, the time taken for the task is
+            obtained via user input from the keyboard.
+             */
+
+
+
+            //Console.Write("Enter the time : ");
+
+            // float.TryParse(Console.ReadLine(),out float time  );
+
+            //if (time >= 2 && time < 3)
+            //{
+            //    Console.WriteLine("Highly Efficient");
+            //}
+            //else if (time >= 3 && time < 4)
+            //{
+            //    Console.WriteLine(" increase your speed");
+            //}
+            //else if (time >= 4 && time <= 5)
+            //{
+            //    Console.WriteLine("training to improve your speed");
+            //}
+            //else if (time > 5)
+            //{
+            //    Console.WriteLine("You are to leave the company");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid input.");
+            //}
 
             #endregion
 
