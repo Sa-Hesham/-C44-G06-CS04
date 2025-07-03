@@ -1,4 +1,6 @@
-﻿using System.Threading.Channels;
+﻿using System.Diagnostics.Metrics;
+using System.Threading.Channels;
+using System.Xml.Linq;
 
 namespace Demo
 {
@@ -278,6 +280,43 @@ internal class Program
 
 
             #endregion
+
+
+            #region string 
+            //// String is a Reference Type, but actually as Value Type
+            // String is a Immutable Type, Can’t change its Value
+            string name1 = "ahmed";
+            string name2 = "ali";  // string name2=new string("ali")  //synatx sugar 
+
+            Console.WriteLine(name1.GetHashCode());
+            Console.WriteLine(name2.GetHashCode());
+
+            Console.WriteLine(name1.Equals(name2));
+            Console.WriteLine(ReferenceEquals(name1, name2));
+            Console.WriteLine("---------------------------------------------------");
+
+            name2 = name1;
+            Console.WriteLine(name1.GetHashCode());
+            Console.WriteLine(name2.GetHashCode());
+
+            Console.WriteLine(name1.Equals(name2));
+            Console.WriteLine(ReferenceEquals(name1, name2));
+            Console.WriteLine("[--------------------------------------------]");
+
+
+            string Message = "Hello" ;
+            Console.WriteLine(Message.GetHashCode());// -1667162590
+            Message +=  "Ahmed";
+            Console.WriteLine("After Change");
+            Console.WriteLine(Message.GetHashCode());//
+            //clr create new obj in heap have a  new value  
+            // and ferferance has the new value 
+
+            #endregion
+
+
+
+
 
             #endregion
 
