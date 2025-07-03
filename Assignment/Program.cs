@@ -392,8 +392,39 @@ namespace Assignment
             //    Console.Write(name[i]);
             //}
 
-          
-            
+
+
+            #endregion
+
+
+
+
+
+
+            #region Q14
+
+            //int number;
+
+
+            //    Console.WriteLine("Enter the number consist of for digits or more ");
+            //    int.TryParse(Console.ReadLine(), out number);
+
+            //int reversed = 0;
+
+            //  while (number > 0)
+            //{
+
+            //    reversed = reversed * 10 + number % 10;  // 0 + 50
+
+            //     number /= 10;
+
+
+
+
+            //}
+
+            //Console.WriteLine(reversed);
+
             #endregion
 
 
