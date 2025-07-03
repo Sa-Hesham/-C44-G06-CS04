@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.Metrics;
+using System.Text;
 using System.Threading.Channels;
 using System.Xml.Linq;
 
@@ -283,8 +284,8 @@ internal class Program
 
 
             #region string 
-            //// String is a Reference Type, but actually as Value Type
-            // String is a Immutable Type, Can’t change its Value
+            // String is a Reference Type, but actually as Value Type
+           // String is a Immutable Type, Can’t change its Value
             string name1 = "ahmed";
             string name2 = "ali";  // string name2=new string("ali")  //synatx sugar 
 
@@ -304,15 +305,38 @@ internal class Program
             Console.WriteLine("[--------------------------------------------]");
 
 
-            string Message = "Hello" ;
+            string Message = "Hello";
             Console.WriteLine(Message.GetHashCode());// -1667162590
-            Message +=  "Ahmed";
+            Message += "Ahmed";
             Console.WriteLine("After Change");
             Console.WriteLine(Message.GetHashCode());//
-            //clr create new obj in heap have a  new value  
-            // and ferferance has the new value 
+                                                     //clr create new obj in heap have a  new value  
+                                                     // and ferferance has the new value 
 
             #endregion
+
+
+            #region StringBuldier
+
+            //its a class referance type internaly linked list
+            // it a mmutable
+            //can change the value in the same refence without creating new value at  new referance
+
+            StringBuilder message = new StringBuilder("ahmed");
+        Console.WriteLine(message);
+            Console.WriteLine(message.GetHashCode());
+            Console.WriteLine("after");
+            message[0] = 'L';
+            Console.WriteLine(message);
+            Console.WriteLine(message.GetHashCode());
+
+
+
+
+            #endregion
+
+
+
 
 
 
