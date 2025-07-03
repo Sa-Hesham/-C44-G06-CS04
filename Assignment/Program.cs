@@ -2,6 +2,7 @@
 
 using System;
 using System.ComponentModel;
+using System.Text;
 
 namespace Assignment
 {
@@ -371,6 +372,28 @@ namespace Assignment
             //Console.WriteLine(message);
 
 
+            #endregion
+
+
+
+
+            #region Q13
+
+            //13 - Write a program to allow the user to enter a string and print the REVERSE of it.
+
+
+            //StringBuilder s1= new StringBuilder();
+            //Console.WriteLine("enter your name ");
+            //string ?name=Console.ReadLine();
+
+
+            //for (int i =name.Length-1; i >= 0; i--)
+            //{
+            //    Console.Write(name[i]);
+            //}
+
+          
+            
             #endregion
 
 
