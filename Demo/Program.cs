@@ -198,24 +198,91 @@ internal class Program
             #region switch C# 9.0
 
 
+            ////int? number = null;
             //int? number = null;
-            int? number = null;
-            string result = number switch
-            {
+            //string result = number switch
+            //{
 
-                null => "null",
-                > 0 => "positive", // must use alias Name to make comaprison 
-                 < 0 => "negative ",
-                _ => "it is zero "
+            //    null => "null",
+            //    > 0 => "positive", // must use alias Name to make comaprison 
+            //     < 0 => "negative ",
+            //    _ => "it is zero "
 
-            };
-            Console.WriteLine(result);
+            //};
+            //Console.WriteLine(result);
+
+
+            #endregion
+
+
+
+            #region looping [forloop - foreach ]
+
+            //for(int i = 1; i <= 10; i++)
+            //{
+            //    Console.WriteLine(i);   
+
+            //}
+
+            //for(int i = 100; i >= 1; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //foreach
+            //working on collecation if same data type 
+            //take a copy from the collectaion data =values
+            // can modify with foreach 
+
+            //int[] num = { 1, 2, 3, 4, 5, 6 };
+
+            //foreach(int number in num)
+            //{
+            //    Console.WriteLine(number);
+            //}
+
+            #endregion
+
+
+            #region while - dowhile
+
+
+            //#region [while -do while]
+            //int number;
+            //bool Isparsed;
+
+            //do
+            //{
+            //    Console.WriteLine("enter number ");
+            //    Isparsed=int.TryParse(Console.ReadLine(), out number);  
+
+            //}while (!Isparsed );
+
+
+            //While loop
+
+            //Console.WriteLine("enter number ");
+            // Isparsed=int.TryParse(Console.ReadLine(), out number);
+
+            //if (Isparsed)
+            //{
+            //    while (number <= 10)
+            //    {
+            //        Console.WriteLine(number);
+            //        number++;
+            //    }
+
+            //}
+
+
+
+
+            #endregion
+
             #endregion
 
 
 
-
-            #endregion
 
 
 
