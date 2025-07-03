@@ -3,6 +3,7 @@
 using System;
 using System.ComponentModel;
 using System.Text;
+using System.Threading;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -433,32 +434,84 @@ namespace Assignment
 
 
             #region Q15
-        //15- Write a program in C# Sharp to find prime numbers within a range  ofnumbers.
-        //Test Data :
-        //Input starting number of range: 1
-        //Input ending number of range: 50
+            //15- Write a program in C# Sharp to find prime numbers within a range  ofnumbers.
+            //Test Data :
+            //Input starting number of range: 1
+            //Input ending number of range: 50
 
-//            for(int i = 1; i<= 50; i++)
-//            {
+            //            for(int i = 1; i<= 50; i++)
+            //            {
 
-//                int counter = 0;
-//                for (int j = 1; j <=i; j++) {
-                
-//                 if (i % j == 0)
-//                    {
-//                        counter++;
-//;                  }
-                
-                
-//                }
+            //                int counter = 0;
+            //                for (int j = 1; j <=i; j++) {
 
-//                if (counter == 2)
-//                {
-//                    Console.Write($",{i}");
-//                }
+            //                 if (i % j == 0)
+            //                    {
+            //                        counter++;
+            //;                  }
 
-//            }
 
+            //                }
+
+            //                if (counter == 2)
+            //                {
+            //                    Console.Write($",{i}");
+            //                }
+
+            //            }
+
+
+
+            #endregion
+
+
+
+            #region Q16
+
+            // 16 - Create a program that asks the user to input three points(x1, y1), (x2,
+            //y2), and(x3, y3), and determines whether these points lie on a single
+            //straight line.
+
+            //(x1,y1)=(1,1);
+            //(x2,y2)=(2,2);
+            //(x3,y3)=(3,3);
+            //slope1 = (y2-y1)/(x2-x1)
+
+            //Console.Write("Enter x1 :: ");
+            //double.TryParse(Console.ReadLine(), out double x1);
+            //Console.Write("Enter y1 :: ");
+            //double.TryParse(Console.ReadLine(), out double y1);
+            //Console.Write("Enter x2 :: ");
+            //double.TryParse(Console.ReadLine(), out double x2);
+            //Console.Write("Enter y2 :: ");
+            //double.TryParse(Console.ReadLine(), out double y2);
+            //Console.Write("Enter x3 :: ");
+            //double.TryParse(Console.ReadLine(), out double x3);
+            //Console.Write("Enter y3 :: ");
+            //double.TryParse(Console.ReadLine(), out double y3);
+
+            //cheak if  the Denominator !=0;
+            //if ((x2 - x1) == 0 || (x3 - x2) == 0)
+            //{
+
+            //    Console.WriteLine("you can not devide by zero ");
+
+            //}else
+            //{
+            //    double slope1 = (y2 - y1) / (x2 - x1);
+            //    double slope2 = (y3 - y2) / (x3 - x2);
+
+             
+            //    if (slope1 == slope2)
+            //    {
+            //        Console.WriteLine("The points are on the same straight line.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("The points are not  on the same straight line.");
+            //    }
+
+            //}
 
 
             #endregion
