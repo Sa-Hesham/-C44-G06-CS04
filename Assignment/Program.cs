@@ -3,6 +3,8 @@
 using System;
 using System.ComponentModel;
 using System.Text;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment
 {
@@ -424,6 +426,40 @@ namespace Assignment
             //}
 
             //Console.WriteLine(reversed);
+
+            #endregion
+
+
+
+
+            #region Q15
+        //15- Write a program in C# Sharp to find prime numbers within a range  ofnumbers.
+        //Test Data :
+        //Input starting number of range: 1
+        //Input ending number of range: 50
+
+//            for(int i = 1; i<= 50; i++)
+//            {
+
+//                int counter = 0;
+//                for (int j = 1; j <=i; j++) {
+                
+//                 if (i % j == 0)
+//                    {
+//                        counter++;
+//;                  }
+                
+                
+//                }
+
+//                if (counter == 2)
+//                {
+//                    Console.Write($",{i}");
+//                }
+
+//            }
+
+
 
             #endregion
 
