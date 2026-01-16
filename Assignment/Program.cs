@@ -1,10 +1,588 @@
-﻿namespace Assignment
+﻿
+
+using System;
+using System.ComponentModel;
+using System.Text;
+using System.Threading;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Assignment
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Q1
+            //1 - Write a program that takes a number from the user then print yes if that
+            //number can be divided by 3 and 4 otherwise print no.
+            //bool Isparse;
+
+            //int num;
+
+            //do
+            //{
+            //    Console.WriteLine("please enter the number ");
+            //    Isparse=int.TryParse(Console.ReadLine(), out num);
+
+
+            //} while (!Isparse);
+
+            //if (num % 4 ==0 && num % 3 == 0)
+            //{
+            //    Console.WriteLine("yes");
+            //}else
+            //{
+            //    Console.WriteLine("no");
+            //}
+
+            #endregion
+
+
+
+            #region Q2
+
+            ////    Write a program that allows the user to insert an integer then print
+            ////negative if it is negative number otherwise print positive.
+            //Console.WriteLine("Enter the number ");
+            //int.TryParse(Console.ReadLine(), out int x);
+            //string message = x switch
+            //{
+
+            //    > 0 => "positive",
+            //    < 0 => "negative",
+            //    _ => " it not positive or negative  it is Zero "
+
+
+
+            //};
+
+            //Console.WriteLine(message);
+
+            #endregion
+
+
+            #region Q3
+
+            //3 - Write a program that takes 3 integers from the user then prints the max
+            //element and the min element.
+
+            //Console.WriteLine("enter number 1 ");
+            //int.TryParse(Console.ReadLine(), out int num1);
+            //Console.WriteLine("enter number 2 ");
+            //int.TryParse(Console.ReadLine(), out int num2);
+            //Console.WriteLine("enter number 3 ");
+            //int.TryParse(Console.ReadLine(), out int num3);
+
+            //// ======== first way ===========
+            //int max = 0;
+            //int min = 0;
+            //if (num1 > num2 && num1 >num3)
+            //{
+            //    max = num1;
+            //    if (num2 >num3)
+            //    {
+            //        min = num3;
+            //    }else
+            //    {
+            //        min = num2;
+            //    }
+
+            //}else if (num2 >num1 && num2 > num3)
+            //{
+            //    max = num2;
+            //    if (num1 > num3)
+            //    {
+            //        min = num3;
+            //    }
+            //    else
+            //    {
+            //        min = num1;
+            //    }
+
+            //}else
+            //{
+            //    max = num3;
+            //    if (num1 > num2)
+            //        min = num2;
+            //    else
+            //        min = num1;
+            //}
+
+            //Console.WriteLine($"max number is {max} ,,  min number is :: {min}");
+
+
+
+
+            //=============Another Way===================== 
+            //int Maxnum = num1;
+            // int Minnum = num1;
+
+            // if (num2 > Maxnum)
+            //     Maxnum = num2;
+            // if (num3 > Maxnum)
+            //     Maxnum = num3;
+
+
+
+            // if (num2 < Minnum)
+            //     Minnum = num2;
+            // if (num3 < Minnum)
+            //     Minnum = num3;
+
+            // Console.WriteLine($"max number is {Maxnum} ,,  min number is :: {Minnum}");
+
+
+
+
+
+            #endregion
+
+
+            #region Q4
+
+            //4 - Write a program that allows the user to insert an integer number then
+            //check If a number is even or odd.
+
+            //Console.WriteLine("enter number 1 ");
+            //int.TryParse(Console.ReadLine(), out int num1);
+
+            //if (num1 % 2 == 0)
+            //{
+            //    Console.WriteLine("Even");
+            //}else
+            //{
+            //    Console.WriteLine("ODD");
+            //}
+
+
+            #endregion
+
+
+
+            #region Q5
+
+            //5 - Write a program that takes character from the user then if it is a vowel
+            //chars(a, e, I, o, u) then print(vowel) otherwise print(consonant).
+
+            //Console.WriteLine("enter character ");
+            // char.TryParse(Console.ReadLine(),out char a);
+
+            //switch (a)
+            //{
+            //    case 'a':
+            //    case 'i':
+            //    case 'o':
+            //    case 'u':
+            //    case 'e':
+            //    case 'A':
+            //    case 'I':
+            //    case 'O':
+            //    case 'U':
+            //    case 'E':
+            //        Console.WriteLine("Vowel");
+            //        break;
+            //    default:
+            //        Console.WriteLine("constant");
+            //        break;
+
+
+
+
+
+            //};
+
+
+            #endregion
+
+
+
+            #region Q6
+
+            //6 - Write a program that allows the user to insert an integer then print all
+            //numbers between 1 to that number.
+
+            //Console.WriteLine("enter number ");
+            //int.TryParse(Console.ReadLine(), out int num);
+
+            //Console.WriteLine($"the number between 1 to {num} is ::");
+
+            //for (int i = 1; i <= num; i++)
+            //{
+            //    Console.Write($" {i}, ");
+            //}
+
+            #endregion
+
+
+
+            #region Q7
+
+            //Console.WriteLine("enter number ");
+            //int.TryParse(Console.ReadLine(), out int x);
+
+            //Console.Clear();
+            //for (int i = 1; i <= 12; i++)
+            //{
+
+            //    Console.WriteLine($"{x} * {i} = {5*i}");
+
+            //}
+
+
+            #endregion
+
+
+            #region Q8
+
+            //8 - Write a program that allows to user to insert number then print all even
+            //    numbers between 1 to this number
+
+            //Console.WriteLine("please enter number ");
+            //int.TryParse(Console.ReadLine(), out int number);
+            //Console.WriteLine($"Even number  are :: ");
+            //for (int i=1; i<=number;i++)
+            //{
+
+
+            //    if (i % 2 == 0)
+            //        Console.WriteLine($"{i},");
+
+
+
+            //}
+
+
+            #endregion
+
+
+            #region Q9
+            //Write a program that takes two integers then prints the power.
+
+            //Console.WriteLine("enter the based number ");
+            //  int.TryParse(Console.ReadLine(), out int based);
+
+            //Console.WriteLine("enter the exponent number ");
+            //int.TryParse(Console.ReadLine(), out int exponent);
+
+            //int Multiply = 1;
+
+
+            //for (int i = 1; i <= exponent; i++)
+            //{
+            //    Multiply *= based;
+
+            //}  
+
+
+
+            //Console.WriteLine($"{based} ^ {exponent} = {Multiply}");
+
+            #endregion
+
+
+
+            #region Q10
+
+            //  int total = 0;
+            //int  average = default;
+            //int percent = default;
+
+            //for (int i = 1; i <= 5; i++)
+            //{
+            //    Console.WriteLine($"inter dgree subj {i}");
+            //    int dgree;
+            //    int.TryParse (Console.ReadLine(),out dgree);
+            //    total += dgree;
+
+
+            //}
+
+
+            //average = total / 5;
+            //percent = (408 * 100) / 500;
+
+            //Console.WriteLine($" Total marks = {total}");
+            //Console.WriteLine($" Average marks  = {average}");
+            //Console.WriteLine($" Percentage = {percent}");
+
+
+
+
+
+
+            #endregion
+
+
+
+
+
+
+            #region Q11
+
+            //11 - Write a program to input the month number and print the number of days in
+            //that month.
+
+
+            //Console.Write("Enter Month Number : ");
+            //int.TryParse(Console.ReadLine(), out int month);
+
+
+            //if (month == 1 || month == 3 || month == 5 || month == 7 ||
+            //    month == 8 || month == 10 || month == 12)
+            //{
+            //    Console.WriteLine("Days in Month: 31");
+            //}
+            //else if (month == 4 || month == 6 || month == 9 || month == 11)
+            //{
+            //    Console.WriteLine(" Days in Month: 30");
+            //}
+            //else if (month == 2)
+            //{
+            //    Console.WriteLine("Days in Month: 28");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid month number!");
+            //}
+            #endregion
+
+
+
+            #region Q12
+
+            ////12- Write a program to create a Simple Calculator.
+            //Console.Write(" the opration  (+, - ,* ,/) :: ");
+            //char.TryParse(Console.ReadLine(), out char oper );
+
+            //Console.Write("enter the first number : ");
+            //float.TryParse(Console.ReadLine(), out float num1);
+
+            //Console.Write("enter the second number : ");
+            //float.TryParse(Console.ReadLine(), out float num2);
+
+
+            //string message = oper switch
+            //{
+
+            //    '+' => $"{num1} + {num2} ={num1 + num2} ",
+            //    '-' => $"{num1} - {num2} = {num1 - num2}",
+            //    '*' => $"{num1} * {num2} = {num1 * num2}",
+            //    '/'=> num2!=0 ? $"{num1} / {num2} = {num1/num2}" : $" you can not devide by zero ",
+
+            //};
+
+            //Console.WriteLine(message);
+
+
+            #endregion
+
+
+
+
+            #region Q13
+
+            //13 - Write a program to allow the user to enter a string and print the REVERSE of it.
+
+
+            //StringBuilder s1= new StringBuilder();
+            //Console.WriteLine("enter your name ");
+            //string ?name=Console.ReadLine();
+
+
+            //for (int i =name.Length-1; i >= 0; i--)
+            //{
+            //    Console.Write(name[i]);
+            //}
+
+
+
+            #endregion
+
+
+
+
+
+
+            #region Q14
+
+            //int number;
+
+
+            //    Console.WriteLine("Enter the number consist of for digits or more ");
+            //    int.TryParse(Console.ReadLine(), out number);
+
+            //int reversed = 0;
+
+            //  while (number > 0)
+            //{
+
+            //    reversed = reversed * 10 + number % 10;  // 0 + 50
+
+            //     number /= 10;
+
+
+
+
+            //}
+
+            //Console.WriteLine(reversed);
+
+            #endregion
+
+
+
+
+            #region Q15
+            //15- Write a program in C# Sharp to find prime numbers within a range  ofnumbers.
+            //Test Data :
+            //Input starting number of range: 1
+            //Input ending number of range: 50
+
+            //            for(int i = 1; i<= 50; i++)
+            //            {
+
+            //                int counter = 0;
+            //                for (int j = 1; j <=i; j++) {
+
+            //                 if (i % j == 0)
+            //                    {
+            //                        counter++;
+            //;                  }
+
+
+            //                }
+
+            //                if (counter == 2)
+            //                {
+            //                    Console.Write($",{i}");
+            //                }
+
+            //            }
+
+
+
+            #endregion
+
+
+
+            #region Q16
+
+            // 16 - Create a program that asks the user to input three points(x1, y1), (x2,
+            //y2), and(x3, y3), and determines whether these points lie on a single
+            //straight line.
+
+            //(x1,y1)=(1,1);
+            //(x2,y2)=(2,2);
+            //(x3,y3)=(3,3);
+            //slope1 = (y2-y1)/(x2-x1)
+
+            //Console.Write("Enter x1 :: ");
+            //double.TryParse(Console.ReadLine(), out double x1);
+            //Console.Write("Enter y1 :: ");
+            //double.TryParse(Console.ReadLine(), out double y1);
+            //Console.Write("Enter x2 :: ");
+            //double.TryParse(Console.ReadLine(), out double x2);
+            //Console.Write("Enter y2 :: ");
+            //double.TryParse(Console.ReadLine(), out double y2);
+            //Console.Write("Enter x3 :: ");
+            //double.TryParse(Console.ReadLine(), out double x3);
+            //Console.Write("Enter y3 :: ");
+            //double.TryParse(Console.ReadLine(), out double y3);
+
+            //cheak if  the Denominator !=0;
+            //if ((x2 - x1) == 0 || (x3 - x2) == 0)
+            //{
+
+            //    Console.WriteLine("you can not devide by zero ");
+
+            //}else
+            //{
+            //    double slope1 = (y2 - y1) / (x2 - x1);
+            //    double slope2 = (y3 - y2) / (x3 - x2);
+
+
+            //    if (slope1 == slope2)
+            //    {
+            //        Console.WriteLine("The points are on the same straight line.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("The points are not  on the same straight line.");
+            //    }
+
+            //}
+
+
+            #endregion
+
+
+
+
+            #region Q17
+            /*17- Within a company, the efficiency of workers is evaluated based on the
+            duration required to complete a specific task. A worker's efficiency level is
+            determined as follows:
+            - If the worker completes the job within 2 to 3 hours, they are considered
+            highly efficient.
+            - If the worker takes 3 to 4 hours, they are instructed to increase their
+            speed.
+            - If the worker takes 4 to 5 hours, they are provided with training to
+            enhance their speed.
+            - If the worker takes more than 5 hours, they are required to leave the
+            company.
+            To calculate the efficiency of a worker, the time taken for the task is
+            obtained via user input from the keyboard.
+             */
+
+
+
+            //Console.Write("Enter the time : ");
+
+            // float.TryParse(Console.ReadLine(),out float time  );
+
+            //if (time >= 2 && time < 3)
+            //{
+            //    Console.WriteLine("Highly Efficient");
+            //}
+            //else if (time >= 3 && time < 4)
+            //{
+            //    Console.WriteLine(" increase your speed");
+            //}
+            //else if (time >= 4 && time <= 5)
+            //{
+            //    Console.WriteLine("training to improve your speed");
+            //}
+            //else if (time > 5)
+            //{
+            //    Console.WriteLine("You are to leave the company");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid input.");
+            //}
+
+            #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
+
     }
 }
